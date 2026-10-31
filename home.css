@@ -23,16 +23,8 @@ body { background: var(--bg); color: var(--bone); font: 400 15px/1.6 var(--sans)
 .lang-btn { padding: 7px 11px; border-radius: 999px; font-size: 11px; font-weight: 600; letter-spacing: .1em; color: var(--mist); transition: background .3s, color .3s; }
 .lang-btn[aria-pressed="true"] { background: var(--bone); color: var(--bg); }
 
-/* ---------- Intro ---------- */
-.intro { display: grid; grid-template-columns: 1.6fr 1fr; gap: 0 var(--gut); align-items: end; padding: clamp(36px, 5vw, 80px) var(--gut) clamp(36px, 4vw, 60px); }
-.intro .eyebrow { grid-column: 1 / -1; }
-.eyebrow { font-size: 11px; font-weight: 600; letter-spacing: .18em; text-transform: uppercase; color: var(--mist); }
-.title { margin-top: 22px; font: 400 clamp(52px, 6.6vw, 120px)/.92 var(--serif); letter-spacing: -.03em; max-width: 11em; }
-.title em { font-style: italic; }
-.lede { max-width: 34em; margin-top: 30px; padding-bottom: .4em; font-size: clamp(15px, 1.2vw, 18px); color: var(--mist); }
-
 /* ---------- Cards ---------- */
-.designs { display: grid; grid-template-columns: repeat(3, 1fr); gap: clamp(14px, 1.6vw, 24px); padding: 0 var(--gut); }
+.designs { display: grid; grid-template-columns: repeat(3, 1fr); gap: clamp(14px, 1.6vw, 24px); padding: clamp(16px, 3vw, 44px) var(--gut) 60px; }
 .card {
   --accent: var(--bone);
   display: flex;
@@ -95,26 +87,21 @@ body { background: var(--bg); color: var(--bone); font: 400 15px/1.6 var(--sans)
 .voice + .open { margin-top: 28px; }
 .card:hover .open { color: var(--accent); }
 
-/* ---------- Footer ---------- */
-.foot { padding: clamp(50px, 6vw, 90px) var(--gut) 40px; }
-.foot p { max-width: 52em; font-size: 13px; color: var(--mist); }
-.foot a { color: var(--bone); border-bottom: 1px solid var(--line); }
-
 /* ---------- Entrance ---------- */
 @media (prefers-reduced-motion: no-preference) {
-  .intro > *, .card { animation: rise 1.2s var(--ease) backwards; }
-  .intro > :nth-child(2) { animation-delay: .08s; }
-  .intro > :nth-child(3) { animation-delay: .16s; }
-  .card:nth-child(1) { animation-delay: .25s; }
-  .card:nth-child(2) { animation-delay: .35s; }
-  .card:nth-child(3) { animation-delay: .45s; }
+  .card { animation: rise 1.2s var(--ease) backwards; }
+  .card:nth-child(2) { animation-delay: .1s; }
+  .card:nth-child(3) { animation-delay: .2s; }
   @keyframes rise { from { opacity: 0; transform: translateY(40px); } }
 }
 
 /* ---------- Responsive ---------- */
+@media (min-width: 1001px) {
+  main { min-height: calc(100vh - 72px); display: grid; align-content: center; }
+  .designs { padding-bottom: clamp(16px, 3vw, 44px); }
+}
 @media (max-width: 1000px) {
   .designs { grid-template-columns: 1fr; max-width: 640px; }
-  .intro { grid-template-columns: 1fr; }
   .top-mid { display: none; }
   .top { grid-template-columns: 1fr auto; }
 }
