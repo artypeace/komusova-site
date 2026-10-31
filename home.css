@@ -39,6 +39,9 @@ body { background: var(--bg); color: var(--bone); font: 400 15px/1.6 var(--sans)
 .card--noir { --card-bg: #161412; --card-fg: #efe8dd; --accent: #d7262f; --card-line: rgba(239, 232, 221, .14); }
 .card--cover { --card-bg: #f5f2ec; --card-fg: #111; --accent: #2238ff; --card-line: rgba(17, 17, 17, .14); }
 .card--sgn { --card-bg: #0f3a2f; --card-fg: #f2eee4; --accent: #f6c544; --card-line: rgba(242, 238, 228, .16); }
+.card--hem { --card-bg: #ebe6dc; --card-fg: #141414; --accent: #e2231a; --card-line: rgba(20, 20, 20, .14); }
+.card--lua { --card-bg: #3d2b22; --card-fg: #f5efe6; --accent: #f1d98c; --card-line: rgba(245, 239, 230, .16); }
+.card--galerie { --card-bg: #f2f1ed; --card-fg: #0b0b0b; --accent: #e10600; --card-line: rgba(11, 11, 11, .14); }
 
 .shot { position: relative; border-radius: 14px; overflow: hidden; background: rgba(0, 0, 0, .25); aspect-ratio: 12 / 7; }
 .shot-d { width: 100%; height: 100%; object-fit: cover; transition: transform 1.2s var(--ease); }
@@ -69,6 +72,10 @@ body { background: var(--bg); color: var(--bone); font: 400 15px/1.6 var(--sans)
 .card--noir .card-title { font: italic 500 clamp(40px, 3.6vw, 58px)/1 var(--serif); }
 .card--cover .card-title { font: 600 clamp(30px, 2.6vw, 42px)/1 'Bodoni Moda', Georgia, serif; letter-spacing: -.02em; }
 .card--sgn .card-title { font: 400 clamp(32px, 2.8vw, 46px)/1 'Unbounded', system-ui, sans-serif; letter-spacing: -.05em; }
+.card--hem .card-title { font: 800 clamp(40px, 3.6vw, 58px)/1 'Fira Sans Extra Condensed', system-ui, sans-serif; text-transform: uppercase; letter-spacing: -.01em; }
+.card--lua .card-title { font: italic 300 clamp(44px, 4vw, 64px)/1 'Noto Serif Display', Georgia, serif; letter-spacing: -.03em; }
+.card--galerie .card-title { font: 700 clamp(32px, 2.8vw, 46px)/1 'Inter Tight', system-ui, sans-serif; letter-spacing: -.05em; }
+.voice s { text-decoration-color: var(--accent); text-decoration-thickness: 2px; }
 
 .card-text { margin-top: 16px; font-size: 14.5px; line-height: 1.6; opacity: .74; }
 .voice { display: flex; flex-direction: column; gap: 6px; margin-top: 20px; font: italic 400 21px/1.25 var(--serif); }
@@ -92,6 +99,9 @@ body { background: var(--bg); color: var(--bone); font: 400 15px/1.6 var(--sans)
   .card { animation: rise 1.2s var(--ease) backwards; }
   .card:nth-child(2) { animation-delay: .1s; }
   .card:nth-child(3) { animation-delay: .2s; }
+  .card:nth-child(4) { animation-delay: .3s; }
+  .card:nth-child(5) { animation-delay: .4s; }
+  .card:nth-child(6) { animation-delay: .5s; }
   @keyframes rise { from { opacity: 0; transform: translateY(40px); } }
 }
 

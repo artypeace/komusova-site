@@ -1,0 +1,406 @@
+<!doctype html>
+<html lang="ru" data-lang="ru"
+  data-title-ru="Komusova — Выставка · Сайгон, который носят" data-title-en="Komusova — The Exhibition · The Saigon you wear"
+  data-desc-ru="Частные шопинг-туры по Хошимину со стилистом и байером Анастасией (@komusova, ex-InStyle). Четыре зала, вход по записи."
+  data-desc-en="Private shopping tours in Ho Chi Minh City with stylist and buyer Anastasia (@komusova, ex-InStyle). Four halls, by appointment.">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex">
+<title>Komusova — Выставка · Сайгон, который носят</title>
+<meta name="description" content="Частные шопинг-туры по Хошимину со стилистом и байером Анастасией (@komusova, ex-InStyle). Четыре зала, вход по записи.">
+<meta property="og:title" content="Komusova — Выставка">
+<meta property="og:image" content="../img/hero.jpg">
+<meta name="theme-color" content="#f2f1ed">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' fill='%23f2f1ed'/%3E%3Ccircle cx='32' cy='32' r='14' fill='%23e10600'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,200..800;1,300..500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../shared/base.css">
+<link rel="stylesheet" href="style.css">
+<script>
+  (function () {
+    var d = document.documentElement, l;
+    try { l = new URLSearchParams(location.search).get('lang') || localStorage.getItem('komusova-lang'); } catch (e) {}
+    if (l !== 'ru' && l !== 'en') l = (navigator.language || '').toLowerCase().indexOf('ru') === 0 ? 'ru' : 'en';
+    d.lang = l; d.setAttribute('data-lang', l); d.className += ' js';
+  })();
+</script>
+</head>
+<body>
+
+<header class="nav">
+  <a href="#top" class="logo">Komusova<i aria-hidden="true"></i></a>
+  <nav class="nav-links" aria-label="Main">
+    <a href="#halls"><span lang="ru">Залы</span><span lang="en">Halls</span></a>
+    <a href="#screening"><span lang="ru">Видеозал</span><span lang="en">Screening room</span></a>
+    <a href="#plan"><span lang="ru">План</span><span lang="en">Floor plan</span></a>
+    <a href="#works"><span lang="ru">Экспонаты</span><span lang="en">Works</span></a>
+    <a href="#curator"><span lang="ru">Куратор</span><span lang="en">Curator</span></a>
+  </nav>
+  <div class="nav-right">
+    <div class="lang" role="group" aria-label="Language">
+      <button type="button" class="lang-btn" data-set="ru" aria-pressed="true">RU</button>
+      <button type="button" class="lang-btn" data-set="en" aria-pressed="false">EN</button>
+    </div>
+    <a href="#book" class="nav-cta" data-magnetic><span lang="ru">Частный показ</span><span lang="en">Private view</span></a>
+    <button type="button" class="nav-burger" aria-expanded="false" aria-controls="menu"><span lang="ru">Меню</span><span lang="en">Menu</span></button>
+  </div>
+</header>
+
+<div class="menu" id="menu" aria-hidden="true">
+  <p class="menu-head"><span lang="ru">Указатель</span><span lang="en">Directory</span></p>
+  <nav class="menu-links">
+    <a href="#statement"><i>0</i><span lang="ru">Экспликация</span><span lang="en">Wall text</span></a>
+    <a href="#halls"><i>I–III</i><span lang="ru">Залы</span><span lang="en">Halls</span></a>
+    <a href="#screening"><i>IV</i><span lang="ru">Видеозал</span><span lang="en">Screening room</span></a>
+    <a href="#plan"><i>↗</i><span lang="ru">План этажа</span><span lang="en">Floor plan</span></a>
+    <a href="#works"><i>01–09</i><span lang="ru">Экспонаты</span><span lang="en">Works</span></a>
+    <a href="#curator"><i>A</i><span lang="ru">Куратор</span><span lang="en">Curator</span></a>
+    <a href="#book"><i>●</i><span lang="ru">Частный показ</span><span lang="en">Private view</span></a>
+  </nav>
+  <div class="menu-foot">Sài Gòn · <span class="sgn-time">--:--</span></div>
+</div>
+
+<main>
+
+<!-- Hero: the entrance wall -->
+<section class="hero" id="top" data-nav="light">
+  <div class="hero-light" aria-hidden="true"></div>
+  <div class="hero-grid">
+    <div class="hero-text">
+      <p class="kicker"><span lang="ru">Выставка · Хошимин · вход по&nbsp;записи</span><span lang="en">Exhibition · Ho Chi Minh City · by appointment</span></p>
+      <h1 class="hero-h1"><span lang="ru">Сайгон, который носят</span><span lang="en">The Saigon you wear</span></h1>
+      <p class="hero-sub"><span lang="ru">Частные шопинг-туры со&nbsp;стилистом и&nbsp;байером Анастасией. Четыре зала&nbsp;— от&nbsp;концепт-сторов Quận&nbsp;1 до&nbsp;портных у&nbsp;рынка Тан Динь.</span><span lang="en">Private shopping tours with stylist and buyer Anastasia. Four halls — from the concept stores of Quận&nbsp;1 to the tailors by Tân Định market.</span></p>
+      <div class="hero-actions">
+        <a href="#halls" class="btn btn--ink" data-magnetic><span lang="ru">Осмотреть залы</span><span lang="en">Visit the halls</span></a>
+        <a href="#book" class="link-dot"><span lang="ru">Частный показ</span><span lang="en">Private view</span></a>
+      </div>
+    </div>
+    <div class="hero-work">
+      <figure class="frame frame--hero">
+        <div class="frame-in"><img src="../img/hero.jpg" width="1024" height="1360" alt="" data-ru="Анастасия в кожаной куртке" data-en="Anastasia in a leather jacket" data-attr="alt"></div>
+      </figure>
+      <div class="wall-label">
+        <b><span lang="ru">Анастасия</span><span lang="en">Anastasia</span> (@komusova)</b>
+        <span lang="ru">Казахстан — Сайгон</span><span lang="en">Kazakhstan — Saigon</span>
+        <i><span lang="ru">Автопортрет в&nbsp;кожаной куртке</span><span lang="en">Self-portrait in a&nbsp;leather jacket</span></i>
+        <span lang="ru">Кожа, солнце, кофе со&nbsp;сгущёнкой</span><span lang="en">Leather, sunlight, condensed-milk coffee</span>
+        <span lang="ru">Собрание автора</span><span lang="en">Collection of the artist</span>
+        <em class="dot-note"><span lang="ru">По записи</span><span lang="en">By appointment</span></em>
+      </div>
+    </div>
+  </div>
+  <dl class="hero-info">
+    <div><dt><span lang="ru">Место</span><span lang="en">Venue</span></dt><dd>Quận 1 · Quận 3 · Chợ Tân Định</dd></div>
+    <div><dt><span lang="ru">Лучший сезон</span><span lang="en">Best season</span></dt><dd><span lang="ru">Сухой, декабрь&nbsp;— апрель</span><span lang="en">Dry, December — April</span></dd></div>
+    <div><dt><span lang="ru">Сейчас в&nbsp;Сайгоне</span><span lang="en">Now in Saigon</span></dt><dd class="sgn-time">--:--</dd></div>
+  </dl>
+  <div class="lights" aria-hidden="true"></div>
+</section>
+
+<!-- Wall text -->
+<section class="statement" id="statement" data-nav="light">
+  <div class="statement-grid">
+    <p class="kicker"><span lang="ru">Зал 0 · Экспликация</span><span lang="en">Hall 0 · Wall text</span></p>
+    <div>
+      <p class="statement-text" data-fade><span lang="ru">Эта выставка&nbsp;— о&nbsp;городе, который не&nbsp;помещается в&nbsp;витрину. Сайгонская мода живёт во&nbsp;дворах Quận&nbsp;1, в&nbsp;старых виллах Quận&nbsp;3 и&nbsp;в&nbsp;рулонах шёлка на&nbsp;рынке Тан Динь. Её не&nbsp;повесишь на&nbsp;стену&nbsp;— её можно только примерить.</span><span lang="en">This exhibition is about a&nbsp;city that won’t fit in a&nbsp;shop window. Saigon fashion lives in the courtyards of Quận&nbsp;1, the old villas of Quận&nbsp;3 and the bolts of silk at Tân Định market. You can’t hang it on a&nbsp;wall — you can only try it on.</span></p>
+      <p class="statement-by" data-fade><span lang="ru">Куратор&nbsp;— стилист и&nbsp;байер Анастасия, @komusova</span><span lang="en">Curated by stylist and buyer Anastasia, @komusova</span></p>
+    </div>
+  </div>
+  <p class="sign">
+    <span lang="ru">Экспонаты руками <s class="strike">не</s> трогать</span>
+    <span lang="en">Please <s class="strike">do not</s> touch the&nbsp;exhibits</span>
+  </p>
+</section>
+
+<!-- Halls = tours, a horizontal gallery -->
+<section class="halls" id="halls" data-nav="light">
+  <div class="halls-track">
+    <div class="hall-intro">
+      <p class="kicker"><span lang="ru">Залы I–IV</span><span lang="en">Halls I–IV</span></p>
+      <h2 class="h2" data-split><span lang="ru">Четыре зала. Маршрут выбираете вы</span><span lang="en">Four halls. You choose the route</span></h2>
+      <p class="sec-sub"><span lang="ru">Стоимость&nbsp;— по&nbsp;запросу: зависит от&nbsp;зала и&nbsp;числа гостей.</span><span lang="en">Prices on request — they depend on the hall and the number of guests.</span></p>
+      <p class="halls-hint" aria-hidden="true"><span lang="ru">Листайте</span><span lang="en">Scroll</span> →</p>
+    </div>
+
+    <article class="room">
+      <a class="frame room-frame" href="#book" data-format="first-look" data-cursor-ru="В зал I" data-cursor-en="Hall I"><div class="frame-in"><img src="../img/coat.jpg" width="1080" height="1440" alt="" loading="lazy" style="object-position: 50% 40%"></div></a>
+      <div class="room-text">
+        <p class="room-kicker"><span lang="ru">Зал I</span><span lang="en">Hall I</span></p>
+        <h3 class="room-title"><span lang="ru">Первый взгляд</span><span lang="en">First Sight</span></h3>
+        <p class="room-lede"><span lang="ru">Знакомство с&nbsp;городом через витрины, которых нет на&nbsp;картах: концепт-сторы Quận&nbsp;1 и&nbsp;вьетнамские марки, о&nbsp;которых дома ещё не&nbsp;слышали.</span><span lang="en">Meeting the city through shop windows that aren’t on any map: the concept stores of Quận&nbsp;1 and Vietnamese labels nobody back home has heard of yet.</span></p>
+        <dl class="room-label">
+          <div><dt><span lang="ru">Продолжительность осмотра</span><span lang="en">Duration of visit</span></dt><dd><span lang="ru">4 часа</span><span lang="en">4 hours</span></dd></div>
+          <div><dt><span lang="ru">В&nbsp;экспозиции</span><span lang="en">On view</span></dt><dd><span lang="ru">Концепт-сторы Quận&nbsp;1, вьетнамские марки</span><span lang="en">Quận&nbsp;1 concept stores, Vietnamese labels</span></dd></div>
+          <div><dt><span lang="ru">Рекомендуется</span><span lang="en">Recommended for</span></dt><dd><span lang="ru">Тем, кто в&nbsp;Сайгоне впервые</span><span lang="en">First time in Saigon</span></dd></div>
+        </dl>
+        <a href="#book" class="link-arrow" data-format="first-look"><span lang="ru">Записаться в&nbsp;зал I</span><span lang="en">Book Hall I</span> →</a>
+      </div>
+    </article>
+
+    <article class="room">
+      <a class="frame room-frame" href="#book" data-format="wardrobe" data-cursor-ru="В зал II" data-cursor-en="Hall II"><div class="frame-in"><img src="../img/leather.jpg" width="1080" height="1440" alt="" loading="lazy" style="object-position: 50% 35%"></div></a>
+      <div class="room-text">
+        <p class="room-kicker"><span lang="ru">Зал II</span><span lang="en">Hall II</span></p>
+        <h3 class="room-title"><span lang="ru">Ретроспектива гардероба</span><span lang="en">A&nbsp;Wardrobe Retrospective</span></h3>
+        <p class="room-lede"><span lang="ru">Целый день, после которого гардероб складывается сам: разбор стиля, покупки по&nbsp;списку и&nbsp;съёмка готовых образов.</span><span lang="en">A&nbsp;whole day after which your wardrobe falls into place: a&nbsp;style read, shopping to a&nbsp;list and a&nbsp;shoot of the finished looks.</span></p>
+        <dl class="room-label">
+          <div><dt><span lang="ru">Продолжительность осмотра</span><span lang="en">Duration of visit</span></dt><dd><span lang="ru">8 часов</span><span lang="en">8 hours</span></dd></div>
+          <div><dt><span lang="ru">В&nbsp;экспозиции</span><span lang="en">On view</span></dt><dd>Đồng Khởi, 42 Nguyễn Huệ, Quận&nbsp;3, Chợ Tân Định</dd></div>
+          <div><dt><span lang="ru">Рекомендуется</span><span lang="en">Recommended for</span></dt><dd><span lang="ru">Тем, кто хочет обновить всё сразу</span><span lang="en">A&nbsp;complete reset</span></dd></div>
+        </dl>
+        <a href="#book" class="link-arrow" data-format="wardrobe"><span lang="ru">Записаться в&nbsp;зал II</span><span lang="en">Book Hall II</span> →</a>
+      </div>
+    </article>
+
+    <article class="room">
+      <a class="frame room-frame" href="#book" data-format="atelier" data-cursor-ru="В зал III" data-cursor-en="Hall III"><div class="frame-in"><img src="../img/tweed.jpg" width="720" height="1280" alt="" loading="lazy" style="object-position: 50% 38%"></div></a>
+      <div class="room-text">
+        <p class="room-kicker"><span lang="ru">Зал III</span><span lang="en">Hall III</span></p>
+        <h3 class="room-title"><span lang="ru">Мастерская</span><span lang="en">The Workshop</span></h3>
+        <p class="room-lede"><span lang="ru">Ткань&nbsp;— с&nbsp;рынка Тан Динь, крой&nbsp;— от&nbsp;портного, мерки&nbsp;— ваши. Вещь, сшитая так, будто она знала вас всегда.</span><span lang="en">Fabric from Tân Định market, a&nbsp;tailor’s cut, your measurements. A&nbsp;piece made as if it had always known you.</span></p>
+        <dl class="room-label">
+          <div><dt><span lang="ru">Продолжительность осмотра</span><span lang="en">Duration of visit</span></dt><dd><span lang="ru">2 встречи</span><span lang="en">2 sessions</span></dd></div>
+          <div><dt><span lang="ru">В&nbsp;экспозиции</span><span lang="en">On view</span></dt><dd><span lang="ru">Chợ Tân Định, ателье портного</span><span lang="en">Chợ Tân Định, a&nbsp;tailor’s atelier</span></dd></div>
+          <div><dt><span lang="ru">Рекомендуется</span><span lang="en">Recommended for</span></dt><dd><span lang="ru">Тем, кто ищет идеальную посадку</span><span lang="en">The perfect fit</span></dd></div>
+        </dl>
+        <a href="#book" class="link-arrow" data-format="atelier"><span lang="ru">Записаться в&nbsp;зал III</span><span lang="en">Book Hall III</span> →</a>
+      </div>
+    </article>
+
+    <a class="door" href="#screening">
+      <span class="door-kicker"><span lang="ru">Зал IV · Видеозал</span><span lang="en">Hall IV · Screening room</span></span>
+      <span class="door-text"><span lang="ru">Для тех, кто смотрит издалека. Дальше по&nbsp;коридору&nbsp;↓</span><span lang="en">For those watching from afar. Further down the corridor&nbsp;↓</span></span>
+    </a>
+  </div>
+  <div class="halls-bar" aria-hidden="true"><span class="halls-count">I</span><span class="halls-line"><i></i></span><span>IV</span></div>
+</section>
+
+<!-- Hall IV: the screening room = buyer -->
+<section class="screening" id="screening" data-nav="dark">
+  <div class="screening-grid">
+    <div class="screen-wrap">
+      <figure class="screen">
+        <img src="../img/hanger.jpg" width="900" height="1600" alt="" loading="lazy" data-ru="Кружевная юбка на прозрачной вешалке" data-en="A lace skirt on a clear hanger" data-attr="alt">
+        <figcaption class="screen-hud" aria-hidden="true"><span class="rec">REC</span><span class="tc">00:00:00:00</span></figcaption>
+      </figure>
+      <div class="wall-label wall-label--dark">
+        <b><span lang="ru">Примерка в&nbsp;кадре</span><span lang="en">Try-on, on camera</span></b>
+        <i><span lang="ru">Видеоработа, хронометраж&nbsp;— сколько нужно</span><span lang="en">Video work, running time — as long as it takes</span></i>
+        <span lang="ru">Шёлк, кружево, хорошая связь</span><span lang="en">Silk, lace, a&nbsp;good connection</span>
+      </div>
+    </div>
+    <div class="screening-text">
+      <p class="kicker"><span lang="ru">Зал IV · Видеозал</span><span lang="en">Hall IV · Screening room</span></p>
+      <h2 class="h2" data-split><span lang="ru">Выставка, которая приезжает к&nbsp;вам</span><span lang="en">An exhibition that comes to you</span></h2>
+      <p class="sec-sub" data-fade><span lang="ru">Байер на&nbsp;связи: Сайгон на&nbsp;расстоянии вытянутой руки&nbsp;— даже из&nbsp;другой страны.</span><span lang="en">Buyer on call: Saigon within arm’s reach — even from another country.</span></p>
+      <ol class="program">
+        <li data-fade><i>01</i><span lang="ru">Вы присылаете референс: ссылку, фото или просто настроение.</span><span lang="en">You send a&nbsp;reference: a&nbsp;link, a&nbsp;photo, or simply a&nbsp;mood.</span></li>
+        <li data-fade><i>02</i><span lang="ru">Я&nbsp;нахожу вещь и&nbsp;примеряю её в&nbsp;кадре&nbsp;— вы&nbsp;видите, как она двигается.</span><span lang="en">I&nbsp;find the piece and try it on camera — you see how it moves.</span></li>
+        <li data-fade><i>03</i><span lang="ru">Выкупаю, бережно упаковываю и&nbsp;отправляю к&nbsp;вам.</span><span lang="en">I&nbsp;buy it, wrap it with care and send it your way.</span></li>
+      </ol>
+      <div class="screening-actions">
+        <a href="#book" class="btn btn--paper" data-format="buyer" data-magnetic><span lang="ru">Заказать экспонат</span><span lang="en">Order a&nbsp;piece</span></a>
+        <a class="link-arrow" href="https://www.instagram.com/p/DZzH-4TjGg3/" target="_blank" rel="noopener"><span lang="ru">Гид: 5 вьетнамских марок</span><span lang="en">Guide: 5 Vietnamese labels</span> ↗</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Floor plan = one day -->
+<section class="plan" id="plan" data-nav="light">
+  <div class="plan-in">
+    <div class="sec-head">
+      <p class="kicker"><span lang="ru">План этажа</span><span lang="en">Floor plan</span></p>
+      <h2 class="h2" data-split><span lang="ru">Один день&nbsp;— шесть комнат</span><span lang="en">One day, six rooms</span></h2>
+      <p class="sec-sub"><span lang="ru">Пример маршрута зала II, «Ретроспектива гардероба». Ваш соберу под&nbsp;вас.</span><span lang="en">A&nbsp;sample route for Hall II, A&nbsp;Wardrobe Retrospective. Yours will be built around you.</span></p>
+    </div>
+    <div class="floor">
+      <div class="cell cell--a"><span class="cell-time">10:00</span><span class="cell-place">Quận 1</span><b><span lang="ru">Кофе и&nbsp;бриф</span><span lang="en">Coffee &amp; brief</span></b><p><span lang="ru">Кофе со&nbsp;сгущёнкой и&nbsp;разговор о&nbsp;вас: ритм, цвета, что не&nbsp;работает в&nbsp;гардеробе.</span><span lang="en">Condensed-milk coffee and a&nbsp;talk about you: pace, colours, what isn’t working.</span></p></div>
+      <div class="cell cell--b"><span class="cell-time">11:30</span><span class="cell-place">Đồng Khởi</span><b><span lang="ru">Концепт-сторы</span><span lang="en">Concept stores</span></b><p><span lang="ru">Главная модная улица и&nbsp;дворы за&nbsp;ней&nbsp;— марки, которых не&nbsp;знают за&nbsp;пределами Азии.</span><span lang="en">The main fashion street and the courtyards behind it — labels unknown outside Asia.</span></p></div>
+      <div class="cell cell--c"><span class="cell-time">13:30</span><span class="cell-place">42 Nguyễn Huệ</span><b><span lang="ru">Обед и&nbsp;пауза</span><span lang="en">Lunch &amp; a&nbsp;pause</span></b><p><span lang="ru">Дом, где на&nbsp;каждом этаже&nbsp;— кофейня или маленький шоурум.</span><span lang="en">A&nbsp;building where every floor hides a&nbsp;café or a&nbsp;tiny showroom.</span></p></div>
+      <div class="cell cell--d"><span class="cell-time">15:00</span><span class="cell-place">Quận 3</span><b><span lang="ru">Шоурумы</span><span lang="en">Showrooms</span></b><p><span lang="ru">Тихие улицы старых вилл, где молодые дизайнеры держат свои шоурумы.</span><span lang="en">Quiet streets of old villas where young designers keep their showrooms.</span></p></div>
+      <div class="cell cell--e"><span class="cell-time">16:30</span><span class="cell-place">Chợ Tân Định</span><b><span lang="ru">Ткани</span><span lang="en">Fabrics</span></b><p><span lang="ru">Шёлк, лён и&nbsp;хлопок метрами&nbsp;— для ателье или просто себе.</span><span lang="en">Silk, linen and cotton by the metre — for the atelier, or just for you.</span></p></div>
+      <div class="cell cell--f"><span class="cell-time">18:30</span><span class="cell-place">Rooftop</span><b><span lang="ru">Закат и&nbsp;капсула</span><span lang="en">Sunset &amp; capsule</span></b><p><span lang="ru">Раскладываем покупки и&nbsp;снимаем образы в&nbsp;мягком вечернем свете.</span><span lang="en">We lay out the haul and shoot the looks in the soft evening light.</span></p></div>
+      <span class="here" aria-hidden="true"><i></i><span lang="ru">Вы здесь</span><span lang="en">You are here</span></span>
+    </div>
+    <div class="plan-foot">
+      <span class="legend"><i></i><span lang="ru">Вы здесь</span><span lang="en">You are here</span></span>
+      <a href="#book" class="btn btn--ink" data-format="wardrobe" data-magnetic><span lang="ru">Хочу такой день</span><span lang="en">I&nbsp;want this day</span></a>
+    </div>
+  </div>
+</section>
+
+<!-- Works = lookbook as a salon hang -->
+<section class="works" id="works" data-nav="light">
+  <div class="sec-head">
+    <p class="kicker"><span lang="ru">Экспонаты 01–09</span><span lang="en">Works 01–09</span></p>
+    <h2 class="h2" data-split><span lang="ru">Из&nbsp;личного гардероба куратора</span><span lang="en">From the curator’s own wardrobe</span></h2>
+  </div>
+  <div class="works-grid">
+    <div class="hang">
+      <a class="frame w1" href="https://www.instagram.com/p/DdCRv51DHD4/" target="_blank" rel="noopener" data-no="01" data-cursor-ru="Instagram ↗" data-cursor-en="Instagram ↗"><div class="frame-in"><img src="../img/leather.jpg" width="1080" height="1440" alt="" loading="lazy" style="object-position: 50% 45%"></div><span class="frame-no">01</span></a>
+      <a class="frame w2" href="https://www.instagram.com/reel/DeQ5U0rOKxz/" target="_blank" rel="noopener" data-no="02" data-cursor-ru="Instagram ↗" data-cursor-en="Instagram ↗"><div class="frame-in"><img src="../img/lace.jpg" width="901" height="1600" alt="" loading="lazy" style="object-position: 50% 40%"></div><span class="frame-no">02</span></a>
+      <a class="frame w3" href="https://www.instagram.com/reel/DbTfDsxs-cE/" target="_blank" rel="noopener" data-no="03" data-cursor-ru="Instagram ↗" data-cursor-en="Instagram ↗"><div class="frame-in"><img src="../img/tweed.jpg" width="720" height="1280" alt="" loading="lazy" style="object-position: 50% 35%"></div><span class="frame-no">03</span></a>
+      <a class="frame w4" href="https://www.instagram.com/p/DeOSUOUI1Sd/" target="_blank" rel="noopener" data-no="04" data-cursor-ru="Instagram ↗" data-cursor-en="Instagram ↗"><div class="frame-in"><img src="../img/coat.jpg" width="1080" height="1440" alt="" loading="lazy" style="object-position: 50% 40%"></div><span class="frame-no">04</span></a>
+      <a class="frame w5" href="https://www.instagram.com/reel/DbY07MCsYH_/" target="_blank" rel="noopener" data-no="05" data-cursor-ru="Instagram ↗" data-cursor-en="Instagram ↗"><div class="frame-in"><img src="../img/runway.jpg" width="901" height="1600" alt="" loading="lazy" style="object-position: 40% 50%"></div><span class="frame-no">05</span></a>
+      <a class="frame w6" href="https://www.instagram.com/komusova/" target="_blank" rel="noopener" data-no="06" data-cursor-ru="Instagram ↗" data-cursor-en="Instagram ↗"><div class="frame-in"><img src="../img/concrete.jpg" width="1080" height="1440" alt="" loading="lazy" style="object-position: 45% 55%"></div><span class="frame-no">06</span></a>
+      <a class="frame w7" href="https://www.instagram.com/p/DcBZip0jGO3/" target="_blank" rel="noopener" data-no="07" data-cursor-ru="Instagram ↗" data-cursor-en="Instagram ↗"><div class="frame-in"><img src="../img/walk.jpg" width="1080" height="1440" alt="" loading="lazy" style="object-position: 50% 60%"></div><span class="frame-no">07</span></a>
+      <a class="frame w8" href="https://www.instagram.com/komusova/" target="_blank" rel="noopener" data-no="08" data-cursor-ru="Instagram ↗" data-cursor-en="Instagram ↗"><div class="frame-in"><img src="../img/hanger.jpg" width="900" height="1600" alt="" loading="lazy" style="object-position: 50% 55%"></div><span class="frame-no">08</span></a>
+      <a class="frame w9" href="https://www.instagram.com/p/DZzH-4TjGg3/" target="_blank" rel="noopener" data-no="09" data-cursor-ru="Instagram ↗" data-cursor-en="Instagram ↗"><div class="frame-in"><img src="../img/guide.jpg" width="720" height="960" alt="" loading="lazy" style="object-position: 50% 30%"></div><span class="frame-no">09</span></a>
+      <div class="hang-card">
+        <b>Komusova<i aria-hidden="true"></i></b>
+        <span lang="ru">Девять работ из&nbsp;Instagram. Каждая открывается в&nbsp;оригинале.</span><span lang="en">Nine works from Instagram. Each one opens in the original.</span>
+      </div>
+    </div>
+    <ol class="catalogue">
+      <li data-no="01"><a href="https://www.instagram.com/p/DdCRv51DHD4/" target="_blank" rel="noopener"><i>01</i><span lang="ru">Кожа, змея и&nbsp;зелёный</span><span lang="en">Leather, snake and green</span></a></li>
+      <li data-no="02"><a href="https://www.instagram.com/reel/DeQ5U0rOKxz/" target="_blank" rel="noopener"><i>02</i><span lang="ru">Кружево после заката</span><span lang="en">Lace after sunset</span></a></li>
+      <li data-no="03"><a href="https://www.instagram.com/reel/DbTfDsxs-cE/" target="_blank" rel="noopener"><i>03</i><span lang="ru">Твид, сыгранный как корсет</span><span lang="en">Tweed, played as a&nbsp;corset</span></a></li>
+      <li data-no="04"><a href="https://www.instagram.com/p/DeOSUOUI1Sd/" target="_blank" rel="noopener"><i>04</i><span lang="ru">Кэмел в&nbsp;движении</span><span lang="en">Camel in motion</span></a></li>
+      <li data-no="05"><a href="https://www.instagram.com/reel/DbY07MCsYH_/" target="_blank" rel="noopener"><i>05</i><span lang="ru">Портрет у&nbsp;подиума</span><span lang="en">Portrait by the runway</span></a></li>
+      <li data-no="06"><a href="https://www.instagram.com/komusova/" target="_blank" rel="noopener"><i>06</i><span lang="ru">Горох на&nbsp;бетоне</span><span lang="en">Polka dots on concrete</span></a></li>
+      <li data-no="07"><a href="https://www.instagram.com/p/DcBZip0jGO3/" target="_blank" rel="noopener"><i>07</i><span lang="ru">Деним для долгого шага</span><span lang="en">Denim for a&nbsp;long stride</span></a></li>
+      <li data-no="08"><a href="https://www.instagram.com/komusova/" target="_blank" rel="noopener"><i>08</i><span lang="ru">Кружево на&nbsp;прозрачной вешалке</span><span lang="en">Lace on a&nbsp;clear hanger</span></a></li>
+      <li data-no="09"><a href="https://www.instagram.com/p/DZzH-4TjGg3/" target="_blank" rel="noopener"><i>09</i><span lang="ru">Пять вьетнамских марок</span><span lang="en">Five Vietnamese labels</span></a></li>
+    </ol>
+  </div>
+</section>
+
+<!-- Curator = about -->
+<section class="curator" id="curator" data-nav="light">
+  <div class="curator-grid">
+    <div class="curator-work">
+      <figure class="frame frame--curator"><div class="frame-in"><img src="../img/runway.jpg" width="901" height="1600" alt="" loading="lazy" data-ru="Анастасия на показе" data-en="Anastasia at a runway show" data-attr="alt"></div></figure>
+      <div class="wall-label">
+        <b><span lang="ru">Куратор на&nbsp;показе</span><span lang="en">The curator at a&nbsp;show</span></b>
+        <span lang="ru">Селфи, первый ряд</span><span lang="en">Selfie, front row</span>
+      </div>
+    </div>
+    <div class="curator-text">
+      <p class="kicker"><span lang="ru">Куратор</span><span lang="en">Curator</span></p>
+      <h2 class="h2" data-split><span lang="ru">Анастасия собирает город, как коллекцию</span><span lang="en">Anastasia collects a&nbsp;city like a&nbsp;collection</span></h2>
+      <p class="curator-lead" data-fade><span lang="ru">Стилист и&nbsp;байер, в&nbsp;прошлом InStyle, дипломированный стилист. Родом из&nbsp;Казахстана, живёт в&nbsp;Сайгоне и&nbsp;первой показывает азиатские дизайнерские марки.</span><span lang="en">A&nbsp;stylist and buyer, formerly at InStyle, a&nbsp;certified stylist. Originally from Kazakhstan, now based in Saigon — and usually first to show Asian designer labels.</span></p>
+      <p class="curator-p" data-fade><span lang="ru">Незнакомые люди почему-то обожают с&nbsp;ней разговаривать. Так в&nbsp;её собрании появляются адреса, которых нет на&nbsp;картах.</span><span lang="en">Strangers somehow love talking to her. That’s how her collection gathers addresses no map has.</span></p>
+      <dl class="bio" data-fade>
+        <div><dt><span lang="ru">Родом</span><span lang="en">Origin</span></dt><dd><span lang="ru">Казахстан</span><span lang="en">Kazakhstan</span></dd></div>
+        <div><dt><span lang="ru">Живёт</span><span lang="en">Lives</span></dt><dd><span lang="ru">Сайгон</span><span lang="en">Saigon</span></dd></div>
+        <div><dt><span lang="ru">Опыт</span><span lang="en">Background</span></dt><dd><span lang="ru">InStyle, дипломированный стилист</span><span lang="en">InStyle, certified stylist</span></dd></div>
+        <div><dt>Instagram</dt><dd><a href="https://www.instagram.com/komusova/" target="_blank" rel="noopener">@komusova · 51K</a></dd></div>
+        <div><dt><span lang="ru">Язык экскурсии</span><span lang="en">Tour language</span></dt><dd><span lang="ru">Русский, английский</span><span lang="en">Russian, English</span></dd></div>
+      </dl>
+    </div>
+  </div>
+</section>
+
+<!-- Visitor information = FAQ -->
+<section class="faq" id="faq" data-nav="light">
+  <div class="faq-grid">
+    <div>
+      <p class="kicker"><span lang="ru">Посетителям</span><span lang="en">Visitors</span></p>
+      <h2 class="h2" data-split><span lang="ru">Информация для посетителей</span><span lang="en">Visitor information</span></h2>
+      <dl class="hours">
+        <div><dt><span lang="ru">Режим работы</span><span lang="en">Opening hours</span></dt><dd><span lang="ru">По&nbsp;записи</span><span lang="en">By appointment</span></dd></div>
+        <div><dt><span lang="ru">Билеты</span><span lang="en">Tickets</span></dt><dd><span lang="ru">По&nbsp;запросу</span><span lang="en">On request</span></dd></div>
+        <div><dt><span lang="ru">Фотосъёмка</span><span lang="en">Photography</span></dt><dd><span lang="ru">Приветствуется</span><span lang="en">Encouraged</span></dd></div>
+      </dl>
+    </div>
+    <div class="faq-list">
+      <details>
+        <summary><span lang="ru">Когда лучше приезжать?</span><span lang="en">When is the best time to come?</span><i class="plus" aria-hidden="true"></i></summary>
+        <p class="faq-a"><span lang="ru">В&nbsp;сухой сезон, с&nbsp;декабря по&nbsp;апрель: тепло, без ливней, приятно гулять. Но&nbsp;шопинг в&nbsp;Сайгоне работает круглый год.</span><span lang="en">In the dry season, December to April: warm, no downpours, lovely for walking. But Saigon shopping works all year round.</span></p>
+      </details>
+      <details>
+        <summary><span lang="ru">На&nbsp;каком языке экскурсия?</span><span lang="en">Which language is the tour in?</span><i class="plus" aria-hidden="true"></i></summary>
+        <p class="faq-a"><span lang="ru">На&nbsp;русском или английском&nbsp;— как вам удобнее.</span><span lang="en">Russian or English — whichever you prefer.</span></p>
+      </details>
+      <details>
+        <summary><span lang="ru">Сколько стоит билет?</span><span lang="en">How much is a ticket?</span><i class="plus" aria-hidden="true"></i></summary>
+        <p class="faq-a"><span lang="ru">Зависит от&nbsp;зала и&nbsp;числа гостей. Напишите даты&nbsp;— пришлю программу и&nbsp;стоимость.</span><span lang="en">It depends on the hall and the number of guests. Send me your dates and I’ll reply with the plan and price.</span></p>
+      </details>
+      <details>
+        <summary><span lang="ru">Можно прийти с&nbsp;подругой?</span><span lang="en">Can I bring a friend?</span><i class="plus" aria-hidden="true"></i></summary>
+        <p class="faq-a"><span lang="ru">Конечно&nbsp;— вдвоём даже веселее. Учту оба стиля и&nbsp;оба бюджета.</span><span lang="en">Of course — it’s even more fun. I’ll plan for both styles and both budgets.</span></p>
+      </details>
+      <details>
+        <summary><span lang="ru">Экспонаты не&nbsp;помещаются в&nbsp;чемодан</span><span lang="en">The exhibits won’t fit in my suitcase</span><i class="plus" aria-hidden="true"></i></summary>
+        <p class="faq-a"><span lang="ru">Помогу бережно упаковать и&nbsp;подскажу, как отправить посылкой домой.</span><span lang="en">I’ll help you pack with care and show you how to ship it home.</span></p>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- Private view = booking -->
+<section class="book" id="book" data-nav="light">
+  <div class="book-grid">
+    <div class="book-head">
+      <p class="kicker"><span lang="ru">Частный показ</span><span lang="en">Private view</span></p>
+      <h2 class="h2" data-split><span lang="ru">Забронировать частный показ</span><span lang="en">Book a&nbsp;private view</span></h2>
+      <p class="sec-sub"><span lang="ru">Заполните билет&nbsp;— текст заявки скопируется, и&nbsp;откроется чат в&nbsp;Instagram. Останется вставить и&nbsp;отправить.</span><span lang="en">Fill in the ticket — your request is copied and an Instagram chat opens. Just paste and send.</span></p>
+      <p class="direct"><span lang="ru">Или напишите напрямую</span><span lang="en">Or write directly to</span> <a href="https://ig.me/m/komusova" target="_blank" rel="noopener">@komusova</a></p>
+    </div>
+    <div class="ticket">
+      <div class="ticket-stub">
+        <span>Komusova<i aria-hidden="true"></i></span>
+        <span><span lang="ru">Билет · вход по&nbsp;записи</span><span lang="en">Ticket · by appointment</span></span>
+      </div>
+      <form class="form" novalidate>
+        <label class="field"><span class="f-lbl"><span lang="ru">Имя посетителя</span><span lang="en">Visitor’s name</span></span><input name="name" type="text" autocomplete="given-name" required></label>
+        <label class="field"><span class="f-lbl"><span lang="ru">Как связаться</span><span lang="en">How to reach you</span></span><input name="contact" type="text" required placeholder="Telegram, WhatsApp, e-mail" data-ru="Telegram, WhatsApp, e-mail" data-en="Telegram, WhatsApp, email" data-attr="placeholder"></label>
+        <label class="field"><span class="f-lbl"><span lang="ru">Даты</span><span lang="en">Dates</span></span><input name="dates" type="text" placeholder="12–18 января" data-ru="12–18 января" data-en="12–18 January" data-attr="placeholder"></label>
+        <label class="field field--select"><span class="f-lbl"><span lang="ru">Зал</span><span lang="en">Hall</span></span>
+          <select name="format">
+            <option value="first-look" data-ru="I · Первый взгляд · 4 часа" data-en="I · First Sight · 4 hours">I · Первый взгляд · 4 часа</option>
+            <option value="wardrobe" data-ru="II · Ретроспектива гардероба · 8 часов" data-en="II · A Wardrobe Retrospective · 8 hours">II · Ретроспектива гардероба · 8 часов</option>
+            <option value="atelier" data-ru="III · Мастерская · 2 встречи" data-en="III · The Workshop · 2 sessions">III · Мастерская · 2 встречи</option>
+            <option value="buyer" data-ru="IV · Видеозал · онлайн" data-en="IV · Screening room · remote">IV · Видеозал · онлайн</option>
+            <option value="unsure" data-ru="Пока не знаю — посоветуйте" data-en="Not sure yet — advise me">Пока не знаю — посоветуйте</option>
+          </select>
+        </label>
+        <label class="field field--wide"><span class="f-lbl"><span lang="ru">Что ищете</span><span lang="en">What you’re looking for</span></span><textarea name="wishes" rows="2" placeholder="Стиль, размер, бюджет" data-ru="Стиль, размер, бюджет" data-en="Style, size, budget" data-attr="placeholder"></textarea></label>
+        <div class="form-actions">
+          <button type="submit" class="btn btn--ink btn--big" data-magnetic><span lang="ru">Отправить в&nbsp;Instagram</span><span lang="en">Send via Instagram</span></button>
+          <span class="form-hint"><span lang="ru">Заявка ни&nbsp;к&nbsp;чему не&nbsp;обязывает</span><span lang="en">No commitment</span></span>
+        </div>
+        <div class="form-out" aria-live="polite"></div>
+      </form>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="footer" data-nav="dark">
+  <p class="footer-note"><span lang="ru">Выставка открыта по&nbsp;записи</span><span lang="en">The exhibition is open by appointment</span></p>
+  <div class="footer-word" aria-hidden="true">Komusova<i></i></div>
+  <div class="footer-row">
+    <span><span lang="ru">Сайгон, сейчас</span><span lang="en">Saigon, now</span> <span class="sgn-time">--:--</span></span>
+    <nav class="footer-links">
+      <a href="https://www.instagram.com/komusova/" target="_blank" rel="noopener">Instagram</a>
+      <a href="https://www.threads.com/@komusova" target="_blank" rel="noopener">Threads</a>
+      <a href="#top"><span lang="ru">Наверх</span><span lang="en">Top</span></a>
+    </nav>
+    <span>© 2026 Anastasia · Ho Chi Minh City</span>
+  </div>
+</footer>
+
+<nav class="switcher" aria-label="Designs">
+  <a href="../" data-keep-lang><span lang="ru">Все</span><span lang="en">All</span></a>
+  <a href="../noir/" data-keep-lang title="Noir">01</a>
+  <a href="../cover/" data-keep-lang title="Сайгонский номер">02</a>
+  <a href="../depart/" data-keep-lang title="SGN">03</a>
+  <a href="../hem/" data-keep-lang title="Hẻm">04</a>
+  <a href="../lua/" data-keep-lang title="Lụa">05</a>
+  <a href="../galerie/" data-keep-lang title="Выставка" aria-current="page">06</a>
+</nav>
+<div class="cursor" aria-hidden="true"><span class="cursor-label"></span></div>
+<div class="toast" role="status" aria-live="polite"></div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/lenis@1.1.13/dist/lenis.min.js"></script>
+<script src="../shared/core.js"></script>
+<script src="main.js"></script>
+</body>
+</html>
