@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="ru" data-lang="ru"
+  data-title-ru="Komusova — три дизайна сайта шопинг-туров" data-title-en="Komusova — three designs for the shopping-tour site"
+  data-desc-ru="Три варианта сайта шопинг-туров по Хошимину для стилиста и байера @komusova: Noir, «Сайгонский номер» и SGN."
+  data-desc-en="Three designs for @komusova’s Ho Chi Minh City shopping-tour site: Noir, The Saigon Issue and SGN.">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex">
+<title>Komusova — три дизайна сайта шопинг-туров</title>
+<meta name="description" content="Три варианта сайта шопинг-туров по Хошимину для стилиста и байера @komusova: Noir, «Сайгонский номер» и SGN.">
+<meta property="og:title" content="Komusova — три дизайна">
+<meta property="og:image" content="img/previews/noir-ru-d.jpg">
+<meta name="theme-color" content="#0c0b0a">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230c0b0a'/%3E%3Ctext x='32' y='44' font-family='Georgia,serif' font-style='italic' font-size='36' text-anchor='middle' fill='%23efe8dd'%3Ek%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400;1,500&family=Bodoni+Moda:opsz,wght@6..96,600&family=Unbounded:wght@400&family=Manrope:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="shared/base.css">
+<link rel="stylesheet" href="home.css">
+<script>
+  (function () {
+    var d = document.documentElement, l;
+    try { l = new URLSearchParams(location.search).get('lang') || localStorage.getItem('komusova-lang'); } catch (e) {}
+    if (l !== 'ru' && l !== 'en') l = (navigator.language || '').toLowerCase().indexOf('ru') === 0 ? 'ru' : 'en';
+    d.lang = l; d.setAttribute('data-lang', l); d.className += ' js';
+  })();
+</script>
+</head>
+<body>
+
+<header class="top">
+  <span class="logo">komusova</span>
+  <span class="top-mid"><span lang="ru">Хошимин</span><span lang="en">Ho Chi Minh City</span> · <span class="sgn-time">--:--</span></span>
+  <div class="lang" role="group" aria-label="Language">
+    <button type="button" class="lang-btn" data-set="ru" aria-pressed="true">RU</button>
+    <button type="button" class="lang-btn" data-set="en" aria-pressed="false">EN</button>
+  </div>
+</header>
+
+<main>
+  <section class="intro">
+    <p class="eyebrow"><span lang="ru">Сайт шопинг-туров · выбор дизайна</span><span lang="en">Shopping-tour site · choose a design</span></p>
+    <h1 class="title">
+      <span lang="ru">Один Сайгон — <em>три характера</em></span>
+      <span lang="en">One Saigon, <em>three characters</em></span>
+    </h1>
+    <p class="lede">
+      <span lang="ru">Те же фото из&nbsp;Instagram и&nbsp;те же туры, но&nbsp;три разных образа сайта и&nbsp;три голоса текстов. Откройте каждый, полистайте на&nbsp;телефоне и&nbsp;выберите свой.</span>
+      <span lang="en">The same Instagram photos and the same tours, told as three different sites in three different voices. Open each one, scroll it on your phone, and pick yours.</span>
+    </p>
+  </section>
+
+  <section class="designs" aria-label="Designs">
+
+    <a class="card card--noir" href="noir/" data-keep-lang>
+      <div class="shot">
+        <img class="shot-d" lang="ru" src="img/previews/noir-ru-d.jpg" width="1200" height="700" alt="Главный экран дизайна Noir">
+        <img class="shot-d" lang="en" src="img/previews/noir-en-d.jpg" width="1200" height="700" alt="Noir design, first screen">
+        <img class="shot-m" lang="ru" src="img/previews/noir-ru-m.jpg" width="360" height="720" alt="" loading="lazy">
+        <img class="shot-m" lang="en" src="img/previews/noir-en-m.jpg" width="360" height="720" alt="" loading="lazy">
+      </div>
+      <div class="card-body">
+        <div class="card-top"><span class="num">01</span><span class="dots" aria-hidden="true"><i style="background:#0d0c0b"></i><i style="background:#efe8dd"></i><i style="background:#b5121b"></i></span></div>
+        <h2 class="card-title">Noir</h2>
+        <p class="card-text"><span lang="ru">Кино о&nbsp;ночном Сайгоне: чернила, кость и&nbsp;красный, как её перчатки. Арки, бегущая строка, маршрут, который рисуется при прокрутке.</span><span lang="en">A&nbsp;film about Saigon after dark: ink, bone and a&nbsp;red as bright as her gloves. Arches, a&nbsp;marquee, and a&nbsp;route that draws itself as you scroll.</span></p>
+        <p class="voice"><span class="voice-k"><span lang="ru">Голос</span><span lang="en">Voice</span></span><span lang="ru">«Город, прочитанный через ткань и&nbsp;силуэт»</span><span lang="en">“The city read through cloth and silhouette”</span></p>
+        <span class="open"><span lang="ru">Открыть</span><span lang="en">Open</span> →</span>
+      </div>
+    </a>
+
+    <a class="card card--cover" href="cover/" data-keep-lang>
+      <div class="shot">
+        <img class="shot-d" lang="ru" src="img/previews/cover-ru-d.jpg" width="1200" height="700" alt="Обложка дизайна «Сайгонский номер»">
+        <img class="shot-d" lang="en" src="img/previews/cover-en-d.jpg" width="1200" height="700" alt="The Saigon Issue design, cover">
+        <img class="shot-m" lang="ru" src="img/previews/cover-ru-m.jpg" width="360" height="720" alt="" loading="lazy">
+        <img class="shot-m" lang="en" src="img/previews/cover-en-m.jpg" width="360" height="720" alt="" loading="lazy">
+      </div>
+      <div class="card-body">
+        <div class="card-top"><span class="num">02</span><span class="dots" aria-hidden="true"><i style="background:#f5f2ec"></i><i style="background:#111111"></i><i style="background:#2238ff"></i></span></div>
+        <h2 class="card-title"><span lang="ru">Сайгонский номер</span><span lang="en">The Saigon Issue</span></h2>
+        <p class="card-text"><span lang="ru">Модный журнал: обложка с&nbsp;мастхедом, туры как оглавление, письмо редактора и&nbsp;фотоистория. Бумага, чёрный и&nbsp;синий Кляйна.</span><span lang="en">A&nbsp;fashion magazine: a&nbsp;cover with a&nbsp;masthead, tours as the contents page, an editor’s letter and a&nbsp;photo story. Paper, black and Klein blue.</span></p>
+        <p class="voice"><span class="voice-k"><span lang="ru">Голос</span><span lang="en">Voice</span></span><span lang="ru">«Больше, чем из&nbsp;годовой подшивки глянца»</span><span lang="en">“More than a&nbsp;year of glossy back issues”</span></p>
+        <span class="open"><span lang="ru">Открыть</span><span lang="en">Open</span> →</span>
+      </div>
+    </a>
+
+    <a class="card card--sgn" href="depart/" data-keep-lang>
+      <div class="shot">
+        <img class="shot-d" lang="ru" src="img/previews/depart-ru-d.jpg" width="1200" height="700" alt="Главный экран дизайна SGN">
+        <img class="shot-d" lang="en" src="img/previews/depart-en-d.jpg" width="1200" height="700" alt="SGN design, first screen">
+        <img class="shot-m" lang="ru" src="img/previews/depart-ru-m.jpg" width="360" height="720" alt="" loading="lazy">
+        <img class="shot-m" lang="en" src="img/previews/depart-en-m.jpg" width="360" height="720" alt="" loading="lazy">
+      </div>
+      <div class="card-body">
+        <div class="card-top"><span class="num">03</span><span class="dots" aria-hidden="true"><i style="background:#0f3a2f"></i><i style="background:#f2eee4"></i><i style="background:#f6c544"></i></span></div>
+        <h2 class="card-title">SGN</h2>
+        <p class="card-text"><span lang="ru">Путешествие как рейс: посадочный талон, табло вылетов с&nbsp;перещёлкивающимися буквами, туры — классы билетов, образы — штампы в&nbsp;паспорте.</span><span lang="en">The trip as a&nbsp;flight: a&nbsp;boarding pass, a&nbsp;split-flap departures board, tours as ticket classes and looks as passport stamps.</span></p>
+        <p class="voice"><span class="voice-k"><span lang="ru">Голос</span><span lang="en">Voice</span></span><span lang="ru">«Вы&nbsp;прилетаете — маршрут уже готов»</span><span lang="en">“You land — the route is ready”</span></p>
+        <span class="open"><span lang="ru">Открыть</span><span lang="en">Open</span> →</span>
+      </div>
+    </a>
+
+  </section>
+</main>
+
+<footer class="foot">
+  <p><span lang="ru">Черновик для согласования: тексты, форматы туров и&nbsp;время — предложения, цены — по&nbsp;запросу. Фото — из&nbsp;Instagram</span><span lang="en">A&nbsp;draft for review: copy, tour formats and timings are proposals; prices are on request. Photos from Instagram</span> <a href="https://www.instagram.com/komusova/" target="_blank" rel="noopener">@komusova ↗</a></p>
+</footer>
+
+<script src="shared/core.js"></script>
+</body>
+</html>

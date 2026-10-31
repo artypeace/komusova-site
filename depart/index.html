@@ -1,0 +1,438 @@
+<!doctype html>
+<html lang="ru" data-lang="ru"
+  data-title-ru="Komusova — SGN · шопинг-туры в Хошимине" data-title-en="Komusova — SGN · Saigon shopping tours"
+  data-desc-ru="Шопинг-туры по Хошимину со стилистом и байером Анастасией (@komusova, ex-InStyle): выберите класс, маршрут уже готов."
+  data-desc-en="Shopping tours in Ho Chi Minh City with stylist and buyer Anastasia (@komusova, ex-InStyle): pick your class, the route is ready.">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex">
+<title>Komusova — SGN · шопинг-туры в Хошимине</title>
+<meta name="description" content="Шопинг-туры по Хошимину со стилистом и байером Анастасией (@komusova, ex-InStyle): выберите класс, маршрут уже готов.">
+<meta property="og:title" content="Komusova — SGN">
+<meta property="og:image" content="../img/walk.jpg">
+<meta name="theme-color" content="#0f3a2f">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230f3a2f'/%3E%3Ctext x='32' y='41' font-family='Menlo,monospace' font-weight='700' font-size='22' text-anchor='middle' fill='%23f6c544'%3ESGN%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500;700&family=Manrope:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../shared/base.css">
+<link rel="stylesheet" href="style.css">
+<script>
+  (function () {
+    var d = document.documentElement, l;
+    try { l = new URLSearchParams(location.search).get('lang') || localStorage.getItem('komusova-lang'); } catch (e) {}
+    if (l !== 'ru' && l !== 'en') l = (navigator.language || '').toLowerCase().indexOf('ru') === 0 ? 'ru' : 'en';
+    d.lang = l; d.setAttribute('data-lang', l); d.className += ' js';
+  })();
+</script>
+</head>
+<body>
+
+<header class="nav">
+  <a href="#top" class="logo">komusova <span class="logo-tag">SGN</span></a>
+  <nav class="nav-links" aria-label="Main">
+    <a href="#classes"><span lang="ru">Классы</span><span lang="en">Classes</span></a>
+    <a href="#board"><span lang="ru">Табло</span><span lang="en">Board</span></a>
+    <a href="#passport"><span lang="ru">Паспорт</span><span lang="en">Passport</span></a>
+    <a href="#crew"><span lang="ru">Стилист</span><span lang="en">Stylist</span></a>
+    <a href="#cargo"><span lang="ru">Карго</span><span lang="en">Cargo</span></a>
+  </nav>
+  <div class="nav-right">
+    <span class="nav-time mono">SGN <span class="sgn-time">--:--</span></span>
+    <div class="lang" role="group" aria-label="Language">
+      <button type="button" class="lang-btn" data-set="ru" aria-pressed="true">RU</button>
+      <button type="button" class="lang-btn" data-set="en" aria-pressed="false">EN</button>
+    </div>
+    <a href="#checkin" class="nav-cta" data-magnetic><span lang="ru">Регистрация</span><span lang="en">Check-in</span></a>
+    <button type="button" class="nav-burger" aria-expanded="false" aria-controls="menu"><span lang="ru">Меню</span><span lang="en">Menu</span></button>
+  </div>
+</header>
+
+<div class="menu" id="menu" aria-hidden="true">
+  <nav class="menu-links">
+    <a href="#classes"><i>01</i><span lang="ru">Классы</span><span lang="en">Classes</span></a>
+    <a href="#board"><i>02</i><span lang="ru">Табло дня</span><span lang="en">Today’s board</span></a>
+    <a href="#passport"><i>03</i><span lang="ru">Паспорт</span><span lang="en">Passport</span></a>
+    <a href="#crew"><i>04</i><span lang="ru">Стилист</span><span lang="en">Stylist</span></a>
+    <a href="#cargo"><i>05</i><span lang="ru">Карго</span><span lang="en">Cargo</span></a>
+    <a href="#checkin"><i>06</i><span lang="ru">Регистрация</span><span lang="en">Check-in</span></a>
+  </nav>
+  <div class="menu-foot mono">SGN <span class="sgn-time">--:--</span> · 10°46′N 106°42′E</div>
+</div>
+
+<main>
+
+<!-- Hero -->
+<section class="hero" id="top" data-nav="dark">
+  <div class="hero-bg" aria-hidden="true">SGN</div>
+  <div class="hero-grid">
+    <div class="hero-copy">
+      <div class="hero-meta mono">
+        <span><span lang="ru">Вылеты</span><span lang="en">Departures</span> · SGN — Hồ Chí Minh</span>
+        <span class="status-dot"><span lang="ru">Посадка открыта</span><span lang="en">Boarding now</span></span>
+      </div>
+      <div class="flaps" aria-label="Sài Gòn">
+        <span class="flap" data-ch="S">S</span><span class="flap" data-ch="À">À</span><span class="flap" data-ch="I">I</span><span class="flap flap--gap" data-ch=" "> </span><span class="flap" data-ch="G">G</span><span class="flap" data-ch="Ò">Ò</span><span class="flap" data-ch="N">N</span>
+      </div>
+      <h1 class="hero-h1">
+        <span lang="ru">Рейс в&nbsp;новый <em>гардероб</em></span>
+        <span lang="en">Now boarding: a&nbsp;new <em>wardrobe</em></span>
+      </h1>
+      <p class="hero-sub">
+        <span lang="ru">Шопинг-туры по&nbsp;Хошимину со&nbsp;стилистом и&nbsp;байером. Вьетнамские дизайнеры, ателье и&nbsp;шёлк — по&nbsp;маршруту, собранному под&nbsp;вас.</span>
+        <span lang="en">Shopping tours in Ho&nbsp;Chi&nbsp;Minh City with a&nbsp;stylist &amp; buyer. Vietnamese designers, ateliers and silk — on a&nbsp;route built around you.</span>
+      </p>
+      <div class="hero-actions">
+        <a href="#classes" class="btn btn--yellow" data-magnetic><span lang="ru">Выбрать класс</span><span lang="en">Choose your class</span> →</a>
+        <a href="#board" class="btn btn--ghost"><span lang="ru">Табло дня</span><span lang="en">Today’s board</span></a>
+      </div>
+    </div>
+
+    <div class="hero-pass">
+      <div class="pass">
+        <div class="pass-photo"><img src="../img/walk.jpg" width="1080" height="1440" alt="" data-ru="Анастасия в денимных бермудах идёт вдоль изогнутой стены" data-en="Anastasia in denim bermudas walking past a curved wall" data-attr="alt"></div>
+        <div class="pass-body">
+          <div class="pass-head mono"><span>Boarding pass</span><span>komusova</span></div>
+          <div class="pass-route">
+            <div><span class="lbl"><span lang="ru">Откуда</span><span lang="en">From</span></span><b>ANY</b><span class="mono-s"><span lang="ru">откуда угодно</span><span lang="en">anywhere</span></span></div>
+            <span class="pass-line" aria-hidden="true"></span>
+            <div class="r"><span class="lbl"><span lang="ru">Куда</span><span lang="en">To</span></span><b>SGN</b><span class="mono-s">Hồ Chí Minh</span></div>
+          </div>
+          <dl class="pass-grid">
+            <div><dt><span lang="ru">Пассажир</span><span lang="en">Passenger</span></dt><dd><span lang="ru">Вы</span><span lang="en">You</span></dd></div>
+            <div><dt><span lang="ru">Стилист</span><span lang="en">Stylist</span></dt><dd>Anastasia</dd></div>
+            <div><dt><span lang="ru">Выход</span><span lang="en">Gate</span></dt><dd>Q1</dd></div>
+            <div><dt><span lang="ru">Место</span><span lang="en">Seat</span></dt><dd>1A</dd></div>
+            <div><dt><span lang="ru">Посадка</span><span lang="en">Boarding</span></dt><dd>10:00</dd></div>
+            <div><dt><span lang="ru">Класс</span><span lang="en">Class</span></dt><dd>First look</dd></div>
+          </dl>
+        </div>
+        <div class="pass-stub">
+          <span class="bars" aria-hidden="true"></span>
+          <span class="mono">KMSV 0126 · SGN</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Ticker -->
+<div class="ticker" data-nav="yellow" aria-hidden="true">
+  <div class="ticker-track" lang="ru"><div class="ticker-group"><span>Посадка открыта</span><span>Выход Q1</span><span>SGN 10:00</span><span>Вьетнамские дизайнеры</span><span>Шёлк и лён</span><span>Ателье по меркам</span><span>Капсула за день</span></div><div class="ticker-group"><span>Посадка открыта</span><span>Выход Q1</span><span>SGN 10:00</span><span>Вьетнамские дизайнеры</span><span>Шёлк и лён</span><span>Ателье по меркам</span><span>Капсула за день</span></div></div>
+  <div class="ticker-track" lang="en"><div class="ticker-group"><span>Boarding now</span><span>Gate Q1</span><span>SGN 10:00</span><span>Vietnamese designers</span><span>Silk &amp; linen</span><span>Made to measure</span><span>A capsule in a day</span></div><div class="ticker-group"><span>Boarding now</span><span>Gate Q1</span><span>SGN 10:00</span><span>Vietnamese designers</span><span>Silk &amp; linen</span><span>Made to measure</span><span>A capsule in a day</span></div></div>
+</div>
+
+<!-- Flight info -->
+<section class="info" id="info" data-nav="light">
+  <span class="label mono"><span lang="ru">Информация о рейсе</span><span lang="en">Flight information</span></span>
+  <p class="info-text" lang="ru">Я&nbsp;— Анастасия, стилист и&nbsp;байер, ex-InStyle. Живу в&nbsp;Сайгоне и&nbsp;знаю его <mark>модную карту наизусть</mark>: где молодые дизайнеры, где лучший шёлк и&nbsp;какой портной успеет к&nbsp;пятнице. Вы&nbsp;прилетаете — <mark>маршрут уже готов</mark>.</p>
+  <p class="info-text" lang="en">I’m Anastasia — stylist and buyer, ex-InStyle. I&nbsp;live in Saigon and know its <mark>fashion map by heart</mark>: where the young designers are, where the best silk is, which tailor can finish by Friday. You land — <mark>the route is ready</mark>.</p>
+  <dl class="data">
+    <div data-fade><dt>51K</dt><dd><span lang="ru">читателей на&nbsp;борту в&nbsp;Instagram</span><span lang="en">followers on board on Instagram</span></dd></div>
+    <div data-fade><dt>1A</dt><dd><span lang="ru">место у&nbsp;окна: всё внимание — вам</span><span lang="en">window seat: all the attention on you</span></dd></div>
+    <div data-fade><dt>06</dt><dd><span lang="ru">адресов за&nbsp;один день</span><span lang="en">addresses in a&nbsp;single day</span></dd></div>
+    <div data-fade><dt>RU·EN</dt><dd><span lang="ru">языки на&nbsp;борту</span><span lang="en">languages on board</span></dd></div>
+  </dl>
+</section>
+
+<!-- Classes = tours -->
+<section class="classes" id="classes" data-nav="dark">
+  <div class="sec-head">
+    <span class="label mono">01 — <span lang="ru">Классы</span><span lang="en">Classes</span></span>
+    <h2 class="h2" data-split><span lang="ru">Выберите <em>класс</em></span><span lang="en">Choose <em>your class</em></span></h2>
+    <p class="sec-sub" data-fade><span lang="ru">Каждый рейс начинается с&nbsp;брифинга о&nbsp;вас — стиль, ритм, бюджет. Дальше я&nbsp;веду, вы&nbsp;наслаждаетесь видом.</span><span lang="en">Every flight starts with a&nbsp;briefing about you — style, pace, budget. From there I&nbsp;fly; you enjoy the view.</span></p>
+  </div>
+
+  <div class="tickets">
+    <a class="ticket" href="#checkin" data-format="first-look" data-cursor-ru="Регистрация" data-cursor-en="Check in">
+      <div class="t-main">
+        <div class="t-top mono"><span><span lang="ru">Класс</span><span lang="en">Class</span> 01</span><span>SGN · Q1</span></div>
+        <h3 class="t-title"><span lang="ru">Первый взгляд</span><span lang="en">First Look</span></h3>
+        <p class="t-text"><span lang="ru">Короткий рейс для первого дня. Маршрут по&nbsp;Quận 1: концепт-сторы, вьетнамские марки и&nbsp;пара адресов, которые знают только местные. Посадка — с&nbsp;кофе.</span><span lang="en">A&nbsp;short flight for day one. A&nbsp;route through Quận 1: concept stores, Vietnamese labels and a&nbsp;few addresses only locals know. Boarding starts with coffee.</span></p>
+        <dl class="t-data mono">
+          <div><dt><span lang="ru">В пути</span><span lang="en">Duration</span></dt><dd><span lang="ru">4 ч</span><span lang="en">4 h</span></dd></div>
+          <div><dt><span lang="ru">Посадка</span><span lang="en">Boarding</span></dt><dd>10:00</dd></div>
+          <div><dt><span lang="ru">Выход</span><span lang="en">Gate</span></dt><dd>Q1</dd></div>
+        </dl>
+      </div>
+      <div class="t-stub">
+        <div class="t-photo"><img src="../img/coat.jpg" width="1080" height="1440" alt="" loading="lazy"></div>
+        <span class="t-cta mono"><span lang="ru">Забронировать</span><span lang="en">Book</span> →</span>
+      </div>
+    </a>
+    <a class="ticket" href="#checkin" data-format="wardrobe" data-cursor-ru="Регистрация" data-cursor-en="Check in">
+      <div class="t-main">
+        <div class="t-top mono"><span><span lang="ru">Класс</span><span lang="en">Class</span> 02</span><span>Q1 → Q3</span></div>
+        <h3 class="t-title"><span lang="ru">Гардероб за&nbsp;день</span><span lang="en">The Wardrobe Day</span></h3>
+        <p class="t-text"><span lang="ru">Дальнемагистральный формат. Утром — аудит стиля, днём — покупки строго по&nbsp;списку, вечером — готовая капсула и&nbsp;съёмка образов. Без пересадок.</span><span lang="en">Long-haul. Morning: a&nbsp;style audit. Afternoon: shopping strictly to the list. Evening: a&nbsp;finished capsule with every look photographed. Non-stop.</span></p>
+        <dl class="t-data mono">
+          <div><dt><span lang="ru">В пути</span><span lang="en">Duration</span></dt><dd><span lang="ru">8 ч</span><span lang="en">8 h</span></dd></div>
+          <div><dt><span lang="ru">Посадка</span><span lang="en">Boarding</span></dt><dd>10:00</dd></div>
+          <div><dt><span lang="ru">Выход</span><span lang="en">Gate</span></dt><dd>Q1</dd></div>
+        </dl>
+      </div>
+      <div class="t-stub">
+        <div class="t-photo"><img src="../img/leather.jpg" width="1080" height="1440" alt="" loading="lazy"></div>
+        <span class="t-cta mono"><span lang="ru">Забронировать</span><span lang="en">Book</span> →</span>
+      </div>
+    </a>
+    <a class="ticket" href="#checkin" data-format="atelier" data-cursor-ru="Регистрация" data-cursor-en="Check in">
+      <div class="t-main">
+        <div class="t-top mono"><span><span lang="ru">Класс</span><span lang="en">Class</span> 03</span><span>Tân Định</span></div>
+        <h3 class="t-title"><span lang="ru">Ателье</span><span lang="en">The Atelier</span></h3>
+        <p class="t-text"><span lang="ru">Рейс с&nbsp;одной пересадкой. Первая встреча — ткань на&nbsp;рынке Тан Динь и&nbsp;эскиз. Вторая — примерка у&nbsp;портного. Прибытие — вещь по&nbsp;вашим меркам.</span><span lang="en">One stopover. Leg one: fabric at Tân Định market and a&nbsp;sketch. Leg two: a&nbsp;fitting with the tailor. Arrival: a&nbsp;piece cut to your measurements.</span></p>
+        <dl class="t-data mono">
+          <div><dt><span lang="ru">В пути</span><span lang="en">Legs</span></dt><dd><span lang="ru">2 встречи</span><span lang="en">2 sessions</span></dd></div>
+          <div><dt><span lang="ru">Посадка</span><span lang="en">Boarding</span></dt><dd><span lang="ru">гибко</span><span lang="en">flexible</span></dd></div>
+          <div><dt><span lang="ru">Выход</span><span lang="en">Gate</span></dt><dd>Q3</dd></div>
+        </dl>
+      </div>
+      <div class="t-stub">
+        <div class="t-photo"><img src="../img/concrete.jpg" width="1080" height="1440" alt="" loading="lazy"></div>
+        <span class="t-cta mono"><span lang="ru">Забронировать</span><span lang="en">Book</span> →</span>
+      </div>
+    </a>
+    <a class="ticket" href="#checkin" data-format="buyer" data-cursor-ru="Заказать" data-cursor-en="Order">
+      <div class="t-main">
+        <div class="t-top mono"><span><span lang="ru">Класс</span><span lang="en">Class</span> 04</span><span>SGN → <span lang="ru">вам</span><span lang="en">you</span></span></div>
+        <h3 class="t-title"><span lang="ru">Байер на&nbsp;связи</span><span lang="en">Buyer on Call</span></h3>
+        <p class="t-text"><span lang="ru">Вы&nbsp;остаётесь дома — вещи летят к&nbsp;вам. Пришлите референс: найду, примерю в&nbsp;камеру, выкуплю и&nbsp;отправлю.</span><span lang="en">You stay home; the pieces fly to you. Send a&nbsp;reference — I&nbsp;find it, try it on camera, buy it and ship it.</span></p>
+        <dl class="t-data mono">
+          <div><dt><span lang="ru">В пути</span><span lang="en">Duration</span></dt><dd><span lang="ru">онлайн</span><span lang="en">remote</span></dd></div>
+          <div><dt><span lang="ru">Посадка</span><span lang="en">Boarding</span></dt><dd><span lang="ru">по запросу</span><span lang="en">on request</span></dd></div>
+          <div><dt><span lang="ru">Выход</span><span lang="en">Gate</span></dt><dd><span lang="ru">ваш дом</span><span lang="en">your door</span></dd></div>
+        </dl>
+      </div>
+      <div class="t-stub">
+        <div class="t-photo"><img src="../img/hanger.jpg" width="900" height="1600" alt="" loading="lazy"></div>
+        <span class="t-cta mono"><span lang="ru">Заказать</span><span lang="en">Order</span> →</span>
+      </div>
+    </a>
+  </div>
+  <p class="fare-note mono"><span lang="ru">Стоимость — по запросу: зависит от класса и числа пассажиров.</span><span lang="en">Fares on request — they depend on the class and the number of passengers.</span></p>
+</section>
+
+<!-- Departure board -->
+<section class="board-sec" id="board" data-nav="dark">
+  <div class="sec-head">
+    <span class="label mono">02 — <span lang="ru">Табло дня</span><span lang="en">Today’s board</span></span>
+    <h2 class="h2" data-split><span lang="ru">Один день, <em>шесть вылетов</em></span><span lang="en">One day, <em>six departures</em></span></h2>
+    <p class="sec-sub"><span lang="ru">Пример маршрута класса «Гардероб за&nbsp;день». Ваш соберу под&nbsp;вас.</span><span lang="en">A&nbsp;sample route for The Wardrobe Day. Yours will be built around you.</span></p>
+  </div>
+  <div class="board">
+    <div class="board-row board-row--head mono">
+      <span><span lang="ru">Время</span><span lang="en">Time</span></span>
+      <span><span lang="ru">Направление</span><span lang="en">Destination</span></span>
+      <span><span lang="ru">Программа</span><span lang="en">Programme</span></span>
+      <span><span lang="ru">Статус</span><span lang="en">Status</span></span>
+    </div>
+    <div class="board-row">
+      <span class="b-time scr">10:00</span>
+      <span class="b-dest scr">QUẬN 1</span>
+      <span class="b-prog"><b class="scr" lang="ru">КОФЕ И БРИФ</b><b class="scr" lang="en">COFFEE &amp; BRIEF</b><small><span lang="ru">Кофе со&nbsp;сгущёнкой и&nbsp;разговор о&nbsp;вас: ритм, цвета, что не&nbsp;работает в&nbsp;гардеробе.</span><span lang="en">Condensed-milk coffee and a&nbsp;talk about you: pace, colours, what isn’t working.</span></small></span>
+      <span class="b-status scr is-board" lang="ru">ПОСАДКА</span><span class="b-status scr is-board" lang="en">BOARDING</span>
+    </div>
+    <div class="board-row">
+      <span class="b-time scr">11:30</span>
+      <span class="b-dest scr">ĐỒNG KHỞI</span>
+      <span class="b-prog"><b class="scr" lang="ru">КОНЦЕПТ-СТОРЫ</b><b class="scr" lang="en">CONCEPT STORES</b><small><span lang="ru">Главная модная улица и&nbsp;дворы вокруг неё — марки, которых не&nbsp;знают за&nbsp;пределами Азии.</span><span lang="en">The main fashion street and its courtyards — labels unknown outside Asia.</span></small></span>
+      <span class="b-status scr" lang="ru">ПО РАСПИСАНИЮ</span><span class="b-status scr" lang="en">ON TIME</span>
+    </div>
+    <div class="board-row">
+      <span class="b-time scr">13:30</span>
+      <span class="b-dest scr">42 NGUYỄN HUỆ</span>
+      <span class="b-prog"><b class="scr" lang="ru">ОБЕД И ПАУЗА</b><b class="scr" lang="en">LUNCH &amp; PAUSE</b><small><span lang="ru">Дом, где на&nbsp;каждом этаже — кофейня или маленький шоурум.</span><span lang="en">A&nbsp;building where every floor hides a&nbsp;café or a&nbsp;tiny showroom.</span></small></span>
+      <span class="b-status scr" lang="ru">ПО РАСПИСАНИЮ</span><span class="b-status scr" lang="en">ON TIME</span>
+    </div>
+    <div class="board-row">
+      <span class="b-time scr">15:00</span>
+      <span class="b-dest scr">QUẬN 3</span>
+      <span class="b-prog"><b class="scr" lang="ru">ШОУРУМЫ</b><b class="scr" lang="en">SHOWROOMS</b><small><span lang="ru">Тихие улицы старых вилл, где прячутся шоурумы молодых дизайнеров.</span><span lang="en">Quiet streets of old villas where young designers keep their showrooms.</span></small></span>
+      <span class="b-status scr" lang="ru">ПО РАСПИСАНИЮ</span><span class="b-status scr" lang="en">ON TIME</span>
+    </div>
+    <div class="board-row">
+      <span class="b-time scr">16:30</span>
+      <span class="b-dest scr">CHỢ TÂN ĐỊNH</span>
+      <span class="b-prog"><b class="scr" lang="ru">ТКАНИ</b><b class="scr" lang="en">FABRICS</b><small><span lang="ru">Шёлк, лён и&nbsp;хлопок метрами — для ателье или просто себе.</span><span lang="en">Silk, linen and cotton by the metre — for the atelier, or just for you.</span></small></span>
+      <span class="b-status scr" lang="ru">ПО РАСПИСАНИЮ</span><span class="b-status scr" lang="en">ON TIME</span>
+    </div>
+    <div class="board-row">
+      <span class="b-time scr">18:30</span>
+      <span class="b-dest scr">ROOFTOP</span>
+      <span class="b-prog"><b class="scr" lang="ru">ЗАКАТ И КАПСУЛА</b><b class="scr" lang="en">SUNSET &amp; CAPSULE</b><small><span lang="ru">Раскладываем покупки и&nbsp;снимаем образы, пока город зажигает огни.</span><span lang="en">We lay out the haul and shoot the looks while the city lights up.</span></small></span>
+      <span class="b-status scr" lang="ru">ПО РАСПИСАНИЮ</span><span class="b-status scr" lang="en">ON TIME</span>
+    </div>
+  </div>
+  <a href="#checkin" class="btn btn--yellow board-cta" data-format="wardrobe" data-magnetic><span lang="ru">Хочу такой день</span><span lang="en">I want this day</span> →</a>
+</section>
+
+<!-- Passport = lookbook -->
+<section class="passport" id="passport" data-nav="light">
+  <div class="sec-head">
+    <span class="label mono">03 — <span lang="ru">Паспорт</span><span lang="en">Passport</span></span>
+    <h2 class="h2" data-split><span lang="ru">Отметки <em>в&nbsp;паспорте</em></span><span lang="en">Passport <em>stamps</em></span></h2>
+    <a class="link-u mono" href="https://www.instagram.com/komusova/" target="_blank" rel="noopener" data-fade><span lang="ru">Все образы в Instagram</span><span lang="en">Every look on Instagram</span> ↗</a>
+  </div>
+  <div class="strip-wrap">
+    <div class="strip">
+      <a class="visa" href="https://www.instagram.com/p/DdCRv51DHD4/" target="_blank" rel="noopener" data-cursor-ru="Instagram ↗" data-cursor-en="Instagram ↗"><span class="v-img"><img src="../img/leather.jpg" width="1080" height="1440" alt="" loading="lazy"></span><span class="v-cap mono">LOOK 01 · 08.09.26</span><span class="stamp stamp--a" aria-hidden="true">SGN<small>✦ STYLE ✦</small></span></a>
+      <a class="visa" href="https://www.instagram.com/p/DeOSUOUI1Sd/" target="_blank" rel="noopener" data-cursor-ru="Instagram ↗" data-cursor-en="Instagram ↗"><span class="v-img"><img src="../img/coat.jpg" width="1080" height="1440" alt="" loading="lazy"></span><span class="v-cap mono">LOOK 02 · 07.10.26</span></a>
+      <a class="visa" href="https://www.instagram.com/reel/DeQ5U0rOKxz/" target="_blank" rel="noopener" data-cursor-ru="Instagram ↗" data-cursor-en="Instagram ↗"><span class="v-img"><img src="../img/lace.jpg" width="901" height="1600" alt="" loading="lazy"></span><span class="v-cap mono">LOOK 03 · 08.10.26</span><span class="stamp stamp--b" aria-hidden="true">Q1<small>ENTRY</small></span></a>
+      <a class="visa" href="https://www.instagram.com/reel/DbTfDsxs-cE/" target="_blank" rel="noopener" data-cursor-ru="Instagram ↗" data-cursor-en="Instagram ↗"><span class="v-img"><img src="../img/tweed.jpg" width="720" height="1280" alt="" loading="lazy"></span><span class="v-cap mono">LOOK 04 · 27.07.26</span></a>
+      <a class="visa" href="https://www.instagram.com/p/DdjJ7R-jHg3/" target="_blank" rel="noopener" data-cursor-ru="Instagram ↗" data-cursor-en="Instagram ↗"><span class="v-img"><img src="../img/hero.jpg" width="1024" height="1360" alt="" loading="lazy"></span><span class="v-cap mono">LOOK 05 · 21.09.26</span><span class="stamp stamp--c" aria-hidden="true">2026<small>✦ KMSV ✦</small></span></a>
+      <a class="visa" href="https://www.instagram.com/reel/DbY07MCsYH_/" target="_blank" rel="noopener" data-cursor-ru="Instagram ↗" data-cursor-en="Instagram ↗"><span class="v-img"><img src="../img/runway.jpg" width="901" height="1600" alt="" loading="lazy"></span><span class="v-cap mono">LOOK 06 · 29.07.26</span></a>
+    </div>
+  </div>
+</section>
+
+<!-- Crew = about -->
+<section class="crew" id="crew" data-nav="dark">
+  <div class="crew-grid">
+    <div class="badge-wrap">
+      <div class="badge">
+        <span class="badge-slot" aria-hidden="true"></span>
+        <div class="badge-photo"><img src="../img/hero.jpg" width="1024" height="1360" alt="" loading="lazy" data-ru="Портрет Анастасии в кожаной куртке" data-en="Portrait of Anastasia in a leather jacket" data-attr="alt"></div>
+        <div class="badge-body">
+          <span class="mono badge-role">Crew · <span lang="ru">стилист и байер</span><span lang="en">stylist &amp; buyer</span></span>
+          <span class="badge-name">Anastasia</span>
+          <dl class="mono">
+            <div><dt>Base</dt><dd>SGN</dd></div>
+            <div><dt>Ex</dt><dd>InStyle</dd></div>
+            <div><dt>IG</dt><dd>@komusova</dd></div>
+          </dl>
+          <span class="bars bars--dark" aria-hidden="true"></span>
+        </div>
+      </div>
+    </div>
+    <div class="crew-text">
+      <span class="label mono">04 — <span lang="ru">Стилист</span><span lang="en">Stylist</span></span>
+      <h2 class="h2" data-split><span lang="ru">Ваш стилист <em>на&nbsp;борту</em></span><span lang="en">Your stylist <em>on board</em></span></h2>
+      <p class="crew-lead" data-fade><span lang="ru">Стилист и&nbsp;fashion-инфлюенсер, в&nbsp;прошлом — InStyle, дипломированный стилист. Родом из&nbsp;Казахстана, живу в&nbsp;Сайгоне и&nbsp;первой показываю азиатские дизайнерские бренды.</span><span lang="en">Stylist and fashion influencer, formerly at InStyle, a&nbsp;certified stylist. Originally from Kazakhstan, now based in Saigon, giving first looks at Asian designer brands.</span></p>
+      <p class="crew-p" data-fade><span lang="ru">Незнакомые люди почему-то обожают со&nbsp;мной разговаривать — так у&nbsp;меня появляются адреса, которых нет на&nbsp;картах. Делюсь ими только с&nbsp;пассажирами.</span><span lang="en">Strangers somehow love talking to me — that’s how I&nbsp;collect addresses no map has. I&nbsp;only share them with passengers.</span></p>
+      <div class="crew-links mono">
+        <a href="https://www.instagram.com/komusova/" target="_blank" rel="noopener">Instagram ↗</a>
+        <a href="https://www.threads.com/@komusova" target="_blank" rel="noopener">Threads ↗</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Cargo = buyer -->
+<section class="cargo" id="cargo" data-nav="yellow">
+  <div class="cargo-grid">
+    <div>
+      <span class="label mono">05 — <span lang="ru">Карго</span><span lang="en">Cargo</span></span>
+      <h2 class="h2" data-split><span lang="ru">Не&nbsp;летите? <em>Вещи прилетят сами</em></span><span lang="en">Not flying? <em>Your pieces will</em></span></h2>
+      <ol class="tags">
+        <li class="tag" data-fade><span class="tag-hole" aria-hidden="true"></span><b class="mono">01</b><span lang="ru">Пришлите референс: ссылку, фото или настроение.</span><span lang="en">Send a&nbsp;reference: a&nbsp;link, a&nbsp;photo or a&nbsp;mood.</span></li>
+        <li class="tag" data-fade><span class="tag-hole" aria-hidden="true"></span><b class="mono">02</b><span lang="ru">Нахожу вещь и&nbsp;примеряю её в&nbsp;кадре.</span><span lang="en">I&nbsp;find the piece and try it on camera.</span></li>
+        <li class="tag" data-fade><span class="tag-hole" aria-hidden="true"></span><b class="mono">03</b><span lang="ru">Выкупаю и&nbsp;отправляю к&nbsp;вашей двери.</span><span lang="en">I&nbsp;buy it and ship it to your door.</span></li>
+      </ol>
+      <div class="cargo-actions">
+        <a href="#checkin" class="btn btn--ink" data-format="buyer" data-magnetic><span lang="ru">Заказать вещь</span><span lang="en">Order a&nbsp;piece</span> →</a>
+        <a class="link-u mono" href="https://www.instagram.com/p/DZzH-4TjGg3/" target="_blank" rel="noopener"><span lang="ru">Гид: 5 вьетнамских брендов</span><span lang="en">Guide: 5 Vietnamese labels</span> ↗</a>
+      </div>
+    </div>
+    <div class="cargo-photo"><img src="../img/hanger.jpg" width="900" height="1600" alt="" loading="lazy" data-ru="Кружевная юбка на прозрачной вешалке" data-en="A lace skirt on a clear hanger" data-attr="alt"><span class="cargo-label mono">SGN → <span lang="ru">ВАМ</span><span lang="en">YOU</span> · FRAGILE</span></div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section class="faq" id="faq" data-nav="light">
+  <div class="faq-grid">
+    <div>
+      <span class="label mono">06 — <span lang="ru">Пассажирам</span><span lang="en">Passengers</span></span>
+      <h2 class="h2" data-split><span lang="ru">Перед <em>вылетом</em></span><span lang="en">Before <em>take-off</em></span></h2>
+    </div>
+    <div class="faq-list">
+      <details>
+        <summary><span lang="ru">Когда лучше прилетать?</span><span lang="en">When is the best time to fly in?</span><i class="plus" aria-hidden="true"></i></summary>
+        <p class="faq-a"><span lang="ru">В&nbsp;сухой сезон, с&nbsp;декабря по&nbsp;апрель: тепло, без ливней и&nbsp;удобно ходить пешком. Но&nbsp;шопинг в&nbsp;Сайгоне работает круглый год.</span><span lang="en">In the dry season, December to April: warm, no downpours, perfect for walking. But Saigon shopping works all year round.</span></p>
+      </details>
+      <details>
+        <summary><span lang="ru">На каком языке тур?</span><span lang="en">Which language is the tour in?</span><i class="plus" aria-hidden="true"></i></summary>
+        <p class="faq-a"><span lang="ru">На&nbsp;русском или английском — как вам удобнее.</span><span lang="en">Russian or English — whichever you prefer.</span></p>
+      </details>
+      <details>
+        <summary><span lang="ru">Сколько стоит билет?</span><span lang="en">How much is a ticket?</span><i class="plus" aria-hidden="true"></i></summary>
+        <p class="faq-a"><span lang="ru">Зависит от&nbsp;класса и&nbsp;числа пассажиров. Напишите даты — пришлю программу и&nbsp;стоимость.</span><span lang="en">It depends on the class and the number of passengers. Send me your dates and I’ll reply with the programme and price.</span></p>
+      </details>
+      <details>
+        <summary><span lang="ru">Можно лететь с&nbsp;подругой?</span><span lang="en">Can I fly with a friend?</span><i class="plus" aria-hidden="true"></i></summary>
+        <p class="faq-a"><span lang="ru">Конечно — вдвоём даже веселее. Учту оба стиля и&nbsp;оба бюджета.</span><span lang="en">Of course — it’s even more fun. I’ll plan for both styles and both budgets.</span></p>
+      </details>
+      <details>
+        <summary><span lang="ru">Перевес багажа. Что делать?</span><span lang="en">Excess baggage. Now what?</span><i class="plus" aria-hidden="true"></i></summary>
+        <p class="faq-a"><span lang="ru">Помогу упаковать и&nbsp;подскажу, как отправить посылкой домой.</span><span lang="en">I’ll help you pack and show you how to ship it home.</span></p>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- Check-in -->
+<section class="checkin" id="checkin" data-nav="dark">
+  <div class="checkin-grid">
+    <div class="checkin-head">
+      <span class="label mono">07 — <span lang="ru">Регистрация</span><span lang="en">Check-in</span></span>
+      <h2 class="h2" data-split><span lang="ru">Регистрация <em>на&nbsp;рейс</em></span><span lang="en">Check in <em>for your flight</em></span></h2>
+      <p class="sec-sub"><span lang="ru">Заполните форму — текст заявки скопируется, и&nbsp;откроется чат в&nbsp;Instagram. Останется вставить и&nbsp;отправить.</span><span lang="en">Fill in the form — your request is copied and an Instagram chat opens. Just paste and send.</span></p>
+      <p class="direct mono"><span lang="ru">Или напрямую:</span><span lang="en">Or directly:</span> <a href="https://ig.me/m/komusova" target="_blank" rel="noopener">@komusova ↗</a></p>
+    </div>
+    <form class="form" novalidate>
+      <label class="field"><span class="mono"><span lang="ru">Пассажир</span><span lang="en">Passenger</span></span><input name="name" type="text" autocomplete="given-name" required placeholder="Имя" data-ru="Имя" data-en="Name" data-attr="placeholder"></label>
+      <label class="field"><span class="mono"><span lang="ru">Связь</span><span lang="en">Contact</span></span><input name="contact" type="text" required placeholder="Telegram, WhatsApp, e-mail" data-ru="Telegram, WhatsApp, e-mail" data-en="Telegram, WhatsApp, email" data-attr="placeholder"></label>
+      <label class="field"><span class="mono"><span lang="ru">Даты</span><span lang="en">Dates</span></span><input name="dates" type="text" placeholder="12–18 января" data-ru="12–18 января" data-en="12–18 January" data-attr="placeholder"></label>
+      <label class="field field--select"><span class="mono"><span lang="ru">Класс</span><span lang="en">Class</span></span>
+        <select name="format">
+          <option value="first-look" data-ru="01 · Первый взгляд · 4 ч" data-en="01 · First Look · 4 h">01 · Первый взгляд · 4 ч</option>
+          <option value="wardrobe" data-ru="02 · Гардероб за день · 8 ч" data-en="02 · The Wardrobe Day · 8 h">02 · Гардероб за день · 8 ч</option>
+          <option value="atelier" data-ru="03 · Ателье · 2 встречи" data-en="03 · The Atelier · 2 sessions">03 · Ателье · 2 встречи</option>
+          <option value="buyer" data-ru="04 · Байер на связи · онлайн" data-en="04 · Buyer on Call · remote">04 · Байер на связи · онлайн</option>
+          <option value="unsure" data-ru="Пока не знаю — посоветуйте" data-en="Not sure yet — advise me">Пока не знаю — посоветуйте</option>
+        </select>
+      </label>
+      <label class="field field--wide"><span class="mono"><span lang="ru">Пожелания</span><span lang="en">Wishes</span></span><textarea name="wishes" rows="3" placeholder="Что ищете, размер, бюджет" data-ru="Что ищете, размер, бюджет" data-en="What you’re after, size, budget" data-attr="placeholder"></textarea></label>
+      <div class="form-actions">
+        <button type="submit" class="btn btn--yellow btn--big" data-magnetic><span lang="ru">Зарегистрироваться</span><span lang="en">Check in</span> → Instagram</button>
+        <span class="mono form-hint"><span lang="ru">Заявка ни к чему не обязывает</span><span lang="en">No commitment</span></span>
+      </div>
+      <div class="form-out mono" aria-live="polite"></div>
+    </form>
+  </div>
+</section>
+
+</main>
+
+<footer class="footer" data-nav="dark">
+  <div class="footer-big" aria-hidden="true">SGN</div>
+  <div class="footer-row mono">
+    <span>komusova · <span lang="ru">Сайгон, местное время</span><span lang="en">Saigon local time</span> <span class="sgn-time">--:--</span></span>
+    <nav class="footer-links">
+      <a href="https://www.instagram.com/komusova/" target="_blank" rel="noopener">Instagram ↗</a>
+      <a href="https://www.threads.com/@komusova" target="_blank" rel="noopener">Threads ↗</a>
+      <a href="#top"><span lang="ru">Наверх ↑</span><span lang="en">Top ↑</span></a>
+    </nav>
+  </div>
+  <div class="footer-row footer-row--small mono">
+    <span>© 2026 Anastasia · Ho Chi Minh City</span>
+    <span>10°46′N 106°42′E</span>
+  </div>
+</footer>
+
+<nav class="switcher" aria-label="Designs">
+  <a href="../" data-keep-lang><span lang="ru">Все</span><span lang="en">All</span></a>
+  <a href="../noir/" data-keep-lang>Noir</a>
+  <a href="../cover/" data-keep-lang><span lang="ru">Журнал</span><span lang="en">Issue</span></a>
+  <a href="../depart/" data-keep-lang aria-current="page">SGN</a>
+</nav>
+<div class="cursor" aria-hidden="true"><span class="cursor-label"></span></div>
+<div class="toast" role="status" aria-live="polite"></div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/lenis@1.1.13/dist/lenis.min.js"></script>
+<script src="../shared/core.js"></script>
+<script src="main.js"></script>
+</body>
+</html>

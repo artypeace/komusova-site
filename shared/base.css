@@ -1,0 +1,102 @@
+/* Shared by all three designs. Colours come from each design's own tokens:
+   --cursor-bg, --cursor-fg, --toast-bg, --toast-fg. */
+
+/* Only the chosen language is shown */
+html[data-lang="ru"] body [lang="en"],
+html[data-lang="en"] body [lang="ru"] { display: none !important; }
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html { -webkit-text-size-adjust: 100%; scroll-behavior: smooth; }
+html.lenis, html.lenis body { height: auto; }
+.lenis.lenis-smooth { scroll-behavior: auto !important; }
+.lenis.lenis-stopped { overflow: hidden; }
+body { -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; overflow-x: clip; }
+img { display: block; max-width: 100%; }
+a { color: inherit; text-decoration: none; }
+button { font: inherit; color: inherit; background: none; border: 0; cursor: pointer; }
+ul, ol { list-style: none; }
+summary { list-style: none; cursor: pointer; }
+summary::-webkit-details-marker { display: none; }
+
+/* loading screen: only with JS, gone once loaded */
+.preloader { display: none; }
+html.js .preloader { display: flex; }
+html.loaded .preloader { display: none; }
+
+/* word reveal */
+.w { display: inline-block; overflow: hidden; vertical-align: top; padding: 0 .06em .12em 0; margin: 0 -.06em -.12em 0; }
+.wi { display: inline-block; will-change: transform; }
+
+/* booking form helpers */
+.form-out { display: none; white-space: pre-wrap; }
+.form-out.is-on { display: block; }
+
+/* label cursor */
+.cursor {
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 200;
+  width: 96px;
+  height: 96px;
+  margin: -48px 0 0 -48px;
+  display: none;
+  place-items: center;
+  border-radius: 50%;
+  background: var(--cursor-bg, #111);
+  color: var(--cursor-fg, #fff);
+  pointer-events: none;
+  transform: scale(0);
+  transition: transform .45s cubic-bezier(.22, 1, .36, 1);
+}
+html.fine .cursor { display: grid; }
+.cursor.is-on { transform: scale(1); }
+.cursor-label { font: 600 10px/1.2 system-ui, sans-serif; letter-spacing: .16em; text-transform: uppercase; text-align: center; }
+
+/* toast */
+.toast {
+  position: fixed;
+  left: 50%;
+  bottom: 28px;
+  z-index: 250;
+  max-width: calc(100vw - 32px);
+  padding: 16px 24px;
+  border-radius: 999px;
+  background: var(--toast-bg, #fff);
+  color: var(--toast-fg, #111);
+  font: 500 14px/1.3 system-ui, sans-serif;
+  transform: translate(-50%, calc(100% + 60px));
+  visibility: hidden;
+  transition: transform .6s cubic-bezier(.22, 1, .36, 1), visibility 0s .6s;
+}
+.toast.is-on { transform: translate(-50%, 0); visibility: visible; transition: transform .6s cubic-bezier(.22, 1, .36, 1), visibility 0s; }
+
+/* back to the design picker */
+.switcher {
+  position: fixed;
+  left: 50%;
+  bottom: 18px;
+  z-index: 90;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  padding: 5px;
+  border-radius: 999px;
+  background: rgba(20, 20, 20, .78);
+  -webkit-backdrop-filter: blur(14px);
+  backdrop-filter: blur(14px);
+  color: #fff;
+  font: 600 10px/1 system-ui, sans-serif;
+  letter-spacing: .14em;
+  text-transform: uppercase;
+  transform: translateX(-50%);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, .25);
+}
+.switcher a { padding: 9px 12px; border-radius: 999px; opacity: .7; white-space: nowrap; transition: background .3s, opacity .3s; }
+.switcher a:hover { opacity: 1; }
+.switcher a[aria-current="page"] { background: #fff; color: #111; opacity: 1; }
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  .preloader { display: none !important; }
+}
